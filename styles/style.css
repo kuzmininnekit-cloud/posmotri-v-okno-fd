@@ -19,7 +19,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 
 h1,
@@ -64,7 +63,6 @@ ol {
   white-space: nowrap;
 }
 
-
 .content {
   display: flex;
   flex-direction: row;
@@ -72,7 +70,6 @@ ol {
   align-items: flex-end;
   gap: 30px;
   width: 1140px;
-  height: 534px;
 }
 
 .content__details {
@@ -118,7 +115,7 @@ ol {
 .content__video-card {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -133,14 +130,15 @@ ol {
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: 0%;
 }
 
 .title {
+  font-family: Oswald;
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 0.94;
   letter-spacing: 0%;
   text-transform: uppercase;
 }
@@ -156,24 +154,26 @@ ol {
 }
 
 .content__video-card-title {
-  min-width: 0;
+  font-family: Oswald;
+  max-width: 195px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 700;
   font-size: 30px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: 0%;
   text-transform: uppercase;
 }
 
 .content__video-card-description {
-  min-width: 0;
+  font-family: Oswald;
+  max-width: 195px;
   line-clamp: 4;
   text-overflow: ellipsis;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16.2px;
+  line-height: 0.9;
   letter-spacing: 0%;
 }
 
@@ -185,8 +185,9 @@ ol {
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
   border: none;
+  width: 225px;
 }
 
 .search-form__label {
@@ -197,6 +198,10 @@ ol {
 }
 
 .search-form__textfield {
+  font-family: Fira Sans Condensed;
+  line-height: 1;
+  font-size: 18px;
+  width: 225px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   border-left: none;
@@ -257,6 +262,7 @@ ol {
 }
 
 .button {
+  font-family: Fira Sans Condensed;
   border: 1px solid white;
   background-color: transparent;
   color: white;
@@ -291,6 +297,9 @@ ol {
 }
 
 .more-button {
+  display: block;
+  justify-self: self-end;
+  flex-shrink: 0;
   width: 390px;
   height: 34px;
   padding: 0;
